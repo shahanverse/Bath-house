@@ -21,7 +21,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[90vh] overflow-hidden ">
       {/* Slides */}
       <div
         className="flex h-full transition-transform duration-700 ease-in-out"
@@ -31,7 +31,7 @@ export default function Carousel() {
           <img
             key={i}
             src={img}
-            className="w-full h-full object-cover flex-shrink-0"
+            className="w-full h-full object-cover shrink-0"
             alt="slide"
           />
         ))}

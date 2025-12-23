@@ -5,14 +5,14 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow">
-      <div className="max-w-7xl mx- px-4">
+    <nav className="sticky top-0 z-50 bg-white shadow">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <img src={logo} alt="logo" className="ms-5 h-12 w-auto" />
 
           {/* Desktop Menu */}
-          <div className="flex items-center gap-4 text-[12px] font-bold uppercase tracking-[0.12em] text-gray-900 ">
+          <div className="hidden md:flex items-center gap-4 text-[12px] font-bold uppercase tracking-[0.12em] text-gray-900 ">
             <a href="#" className="hover:text-indigo-600">
               HOME
             </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
             Home
           </a>
           <a href="#" className="block">
-            Features
+            BATHROOM ESSENTIALS
           </a>
           <a href="#" className="block">
             Pricing
